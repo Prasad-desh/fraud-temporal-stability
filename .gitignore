@@ -1,0 +1,12 @@
+# dataset (144 MB, above GitHub's file size limit) - see README for download link
+creditcard.csv
+*.zip
+
+# python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# os
+.DS_Store
