@@ -1,0 +1,7 @@
+Model,Features,PR-AUC random (mean+-sd),PR-AUC temporal,Recall (cost-tuned),Precision (cost-tuned),FN,Savings %
+LogReg,all,0.7331 +- 0.0320,0.7818,0.7820,0.7021,46,60.37
+LogReg,selected,0.7218 +- 0.0327,0.7343,0.8104,0.5856,40,59.93
+RandomForest,all,0.8239 +- 0.0312,0.7351,0.7915,0.3531,44,58.83
+RandomForest,selected,0.8172 +- 0.0319,0.6787,0.7346,0.2029,56,55.46
+XGBoost,all,0.8550 +- 0.0258,0.7563,0.8294,0.0910,36,42.76
+XGBoost,selected,0.8362 +- 0.0356,0.7439,0.8009,0.2691,42,57.98
