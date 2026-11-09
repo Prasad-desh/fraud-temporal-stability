@@ -6,13 +6,13 @@ A stability-aware, cost-sensitive evaluation of feature selection for credit-car
 
 ---
 
-## Case study
+## Problem
 
 Credit-card fraud detection under extreme class imbalance: only 492 of 284,807 transactions are fraudulent (0.173%). A classifier that labels everything legitimate scores 99.83% accuracy and catches nothing, so accuracy cannot be used to choose a model.
 
 The dataset's features `V1`–`V28` are PCA components. PCA ranks directions by variance in the input space, which says nothing about their usefulness for predicting the label. Supervised feature selection is what answers that question — and this study asks whether the answer holds up over time.
 
-## Three solutions
+## Approach
 
 One method from each feature-selection family, paired with a classifier, each run with and without selection:
 
@@ -89,9 +89,7 @@ Full run: 15 CV folds plus the temporal protocol, about 24 hours on an Apple Sil
 
 ```
 fraud_temporal_stability_study.py     full study (the code that produced results/)
-Fraud_Temporal_Stability_Study.ipynb  notebook version of the same study
 results/                              full run: 9 tables (CSV) + 4 figures (PNG)
-results_quick/                        reduced-grid smoke test
 requirements-lock.txt                 exact package versions used
 ```
 
